@@ -71,7 +71,6 @@ document.querySelector("#slider").addEventListener("change", function() {
 	// set the sliders value to a variable 
 	var slider = document.querySelector("#slider").value;
 	video.volume = slider / 100;
-	console.log("before the * 100", video.volume);
 	document.querySelector("#volume").innerHTML = video.volume * 100 + "%"; 
 	console.log(video.volume);
 });
